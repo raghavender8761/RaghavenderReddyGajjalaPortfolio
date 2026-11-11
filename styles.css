@@ -727,3 +727,24 @@ body.project-modal-open { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) {
   .project-modal { animation: none !important; }
 }
+
+/* ---------- MOBILE EXPERIENCE TIMELINE FIX ---------- */
+@media (max-width: 780px) {
+  .experience-item {
+    padding-left: 22px;
+  }
+  .experience-item .experience-body {
+    padding-left: 22px;
+    min-width: 0;
+  }
+  .experience-list::before,
+  .experience-list::after {
+    left: 25.5px;
+  }
+  .experience-item .timeline-dot {
+    left: 0;
+  }
+  .experience-item .experience-date {
+    padding-left: 22px;
+  }
+}
